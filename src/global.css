@@ -1,0 +1,116 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #2c3e50;
+    margin-bottom: 24px;
+    font-size: 24px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 12px;
+  }
+  
+  /* 表格优化 */
+  .el-table {
+    margin-top: 20px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .el-table__header th {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .el-table__row:hover td {
+    background-color: #f8f9fa !important;
+  }
+  
+  /* 操作按钮组 */
+  .el-button--small {
+    margin: 4px 8px 4px 0;
+    padding: 6px 10px;
+  }
+  
+  /* 对话框细节优化 */
+  .el-dialog {
+    border-radius: 8px;
+  }
+  
+  .el-text {
+    margin: 8px 0;
+    display: inline-block;
+  }
+  
+  .el-text[type="primary"] {
+    color: #606266;
+    width: 140px;
+    font-weight: 500;
+  }
+  
+  /* 图片预览样式 */
+  .el-image {
+    border: 1px solid #ebeef5;
+    border-radius: 6px;
+    margin-top: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  }
+  
+  /* 表单元素优化 */
+  .el-input-number {
+    width: 100%;
+  }
+  
+  .el-input__wrapper {
+    border-radius: 6px;
+  }
+  
+  /* 上传区域优化 */
+  .upload-demo {
+    margin-top: 20px;
+  }
+  
+  .upload-demo p {
+    color: #909399;
+    margin-bottom: 12px;
+  }
+  
+  /* 响应式调整 */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+    
+    h2 {
+      font-size: 20px;
+    }
+    
+    .el-table {
+      font-size: 14px;
+    }
+  }
+  
+  /* 间隔优化 */
+  .el-form-item {
+    margin-bottom: 18px;
+  }
+  
+  .dialog-footer {
+    padding-top: 20px;
+    text-align: right;
+  }
+  
+  /* 色彩统一 */
+  .el-button--primary {
+    background-color: #409eff;
+    border-color: #409eff;
+  }
+  
+  .el-button--primary:hover {
+    background-color: #66b1ff;
+    border-color: #66b1ff;
+  }
