@@ -71,10 +71,8 @@ const Loaded=ref(true)
 const showDetail=ref(false),buy_end_Visible=ref(false)
 async function getdata(){
     try{
-        const postData=new FormData()
-        postData.append("action","own")
         Loaded.value=false
-        const result=await axios.post('/api/get_uploaded_books',postData,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
+        const result=await axios.get('/api/get_uploaded_books',{headers:{Authorization:"Bearer "+Cookies.get("access_token"),Action:"own"}})
         if(result.data.status==1){
             bookData.value=result.data.result
             Loaded.value=true
@@ -114,9 +112,7 @@ function buy_end_dialog(id:any){
 }
 async function buy_end(){
     try{
-    const postData=new FormData()
-    postData.append("id",del_id.value)
-    const result=await axios.post('/api/book_end',postData,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
+    const result=await axios.get('/api/book_end',{headers:{Authorization:"Bearer "+Cookies.get("access_token"),id:del_id.value}})
     if(result.data.status==1){
         ElMessage({
             message:"交易完成！",

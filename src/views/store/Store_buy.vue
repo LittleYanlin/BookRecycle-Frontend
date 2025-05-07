@@ -143,12 +143,11 @@ function report(row:any){
 }
 const onAddItem=ref(false),upload=ref(false),showDetail=ref(false)
 const name=ref(),print_edition=ref(),publisher=ref(),url=ref('')
-postData.append('action',"all")
 let bookData = ref<Array<any>>([])
 async function getdata(){
     try{
       Loaded.value=false
-        const result=await axios.post('/api/get_uploaded_books',postData,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
+        const result=await axios.get('/api/get_uploaded_books',{headers:{Authorization:"Bearer "+Cookies.get("access_token"),Action:"all"}})
         if(result.data.status==1){
             bookData.value=result.data.result
             Loaded.value=true

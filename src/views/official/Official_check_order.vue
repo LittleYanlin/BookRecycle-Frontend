@@ -48,9 +48,8 @@ const showDetail=ref(false)
 async function getdata(){
     try{
         const postData=new FormData()
-        postData.append("action","stu_check")
         Loaded.value=false
-        const result=await axios.post('/api/get_user_upload_books',postData,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
+        const result=await axios.get('/api/get_user_upload_books',{headers:{Authorization:"Bearer "+Cookies.get("access_token"),Action:"stu_check"}})
         if(result.data.status==1){
             bookData.value=result.data.result
             Loaded.value=true

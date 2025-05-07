@@ -49,9 +49,7 @@ const router=useRouter()
 async function fetchData() {
   try {
     loading.value=true
-    const postData = new FormData();
-    postData.append('req_user',route.params.req_user as string)
-    const response = await axios.post('/api/chat/get/detail', postData,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}});
+    const response = await axios.get('/api/chat/get/detail',{headers:{Authorization:"Bearer "+Cookies.get("access_token"),ReqUser:route.params.req_user}});
     if (response.data.status === 1) {
       chats.value = response.data.data;
       status.value = 1;

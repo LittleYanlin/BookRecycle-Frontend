@@ -57,7 +57,7 @@ const new_pass=ref('')
 async function fetchUsers(){
     loading.value = true
     try {
-      const response = await axios.post('/api/admin/user/stu',{},{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
+      const response = await axios.get('/api/admin/user/stu',{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
       if (response.data.status === 1) {
         users.value = response.data.data
       } else {

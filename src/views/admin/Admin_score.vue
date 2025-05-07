@@ -133,7 +133,7 @@ async function detail(row:any){
 async function getdata(){
   try {
     loading.value=true
-    const response = await axios.post('/api/admin/score',{},{headers:headerData});
+    const response = await axios.get('/api/admin/score',{headers:headerData});
     if (response.data.status === 1) {
       authorized.value = true;
       fetchStudentsData();
@@ -150,7 +150,7 @@ async function getdata(){
 }
 async function fetchStudentsData(){
   try {
-    const response = await axios.post('/api/admin/score',{},{headers:headerData});
+    const response = await axios.get('/api/admin/score',{headers:headerData});
     if (response.data.status === 1) {
       studentsData.value = response.data.data;
     } else {

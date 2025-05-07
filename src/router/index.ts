@@ -25,7 +25,7 @@ import axios from 'axios'
 async function refresh(){
   try{
   const header={Authorization:"Bearer "+Cookies.get("refresh_token")}
-  const result=await axios.post('/api/refresh',{},{headers:header})
+  const result=await axios.get('/api/refresh',{headers:header})
   if (result.status!=200){
     return 0
   }

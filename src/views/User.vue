@@ -62,10 +62,8 @@ let new_password=ref(''),new_phone=ref(''),new_address=ref(''),shoukuan=ref(''),
 score=ref(''),name=ref(''),user_manage=ref(''),score_manage=ref(''),content_manage=ref(''),super_admin=ref('')
 async function getdata(){
     try{
-    const Data=new FormData()
-    Data.append("action","check")
     const header={Authorization:"Bearer "+Cookies.get("access_token")}
-    const result=await axios.post('/api/manage/'+role.value,Data,{headers:header})
+    const result=await axios.get('/api/manage/'+role.value,{headers:header})
     if(result.data.status==1){
         new_phone.value=result.data.data.phone
         new_place.value=result.data.data.place

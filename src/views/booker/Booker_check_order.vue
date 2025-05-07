@@ -142,10 +142,8 @@ async function end_order(){
 }
 async function getdata(){
     try{
-        const postData=new FormData()
-        postData.append("action","booker_check")
         Loaded.value=false
-        const result=await axios.post('/api/get_user_upload_books',postData,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
+        const result=await axios.get('/api/get_user_upload_books',{headers:{Authorization:"Bearer "+Cookies.get("access_token"),Action:"booker_check"}})
         if(result.data.status==1){
             bookData.value=result.data.result
             Loaded.value=true
@@ -182,10 +180,8 @@ let userDetail = ref({
 })
 async function detail(row:any){
   bookDetail.value=row
-  let Data=new FormData()
-  Data.append("id",row.id)
   try{
-    const result=await axios.post('/api/get_order_detail',Data,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
+    const result=await axios.get('/api/get_order_detail',{headers:{Authorization:"Bearer "+Cookies.get("access_token"),id:row.id}})
     if(result.data.status==1){
         userDetail.value.address=result.data.result.address
         userDetail.value.phone=result.data.result.phone

@@ -44,7 +44,7 @@ const message = ref('');
 const router=useRouter()
 async function fetchData() {
   try {
-    const response = await axios.post('/api/chat/get/all',{},{headers:{Authorization:"Bearer "+Cookies.get("access_token")}});
+    const response = await axios.get('/api/chat/get/all',{headers:{Authorization:"Bearer "+Cookies.get("access_token")}});
     if (response.data.status === 1) {
       chats.value = response.data.data;
       status.value = 1;
