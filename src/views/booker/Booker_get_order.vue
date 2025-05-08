@@ -57,10 +57,8 @@ const Loaded=ref(true)
 const showDetail=ref(false)
 async function getdata(){
     try{
-        const postData=new FormData()
-        postData.append("action","all")
         Loaded.value=false
-        const result=await axios.post('/api/get_user_upload_books',postData,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
+        const result=await axios.get('/api/official/getBooks',{headers:{Authorization:"Bearer "+Cookies.get("access_token"),Action:"all"}})
         if(result.data.status==1){
             bookData.value=result.data.result
             Loaded.value=true
@@ -116,7 +114,7 @@ async function get_order_confirm(id:any){
     try{
     let Data=new FormData
     Data.append("id",id)
-    const result=await axios.post('/api/get_order',Data,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
+    const result=await axios.post('/api/official/getOrder',Data,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
     if(result.data.status==1){
         ElMessage({
             message:result.data.message,

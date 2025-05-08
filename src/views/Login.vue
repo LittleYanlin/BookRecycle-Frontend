@@ -22,6 +22,7 @@
     </div>
     <el-dialog v-model="firstVisible" title="首次登录信息补充" width="500">
     <el-form>
+        <el-text type="warning" size="small">密码必须大于8位小于20位且必须包含大小写字母、数字和特殊符号</el-text>
       <el-form-item label="更改密码" label-width="140px" >
         <el-input v-model="new_password" type="password"/>
       </el-form-item>

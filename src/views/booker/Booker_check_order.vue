@@ -115,7 +115,7 @@ async function end_order(){
     Data.append("kg_real",kg.value)
     Data.append("img_url",url.value)
     try{
-        const result=await axios.post('/api/shoushu',Data,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
+        const result=await axios.post('/api/official/shoushu',Data,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
         if(result.data.status==1){
             ElMessage({
                 message:"上传成功！获得余额"+result.data.money+'元',
@@ -143,7 +143,7 @@ async function end_order(){
 async function getdata(){
     try{
         Loaded.value=false
-        const result=await axios.get('/api/get_user_upload_books',{headers:{Authorization:"Bearer "+Cookies.get("access_token"),Action:"booker_check"}})
+        const result=await axios.get('/api/official/getBooks',{headers:{Authorization:"Bearer "+Cookies.get("access_token"),Action:"booker_check"}})
         if(result.data.status==1){
             bookData.value=result.data.result
             Loaded.value=true
@@ -181,7 +181,7 @@ let userDetail = ref({
 async function detail(row:any){
   bookDetail.value=row
   try{
-    const result=await axios.get('/api/get_order_detail',{headers:{Authorization:"Bearer "+Cookies.get("access_token"),id:row.id}})
+    const result=await axios.get('/api/official/getOrderDetail',{headers:{Authorization:"Bearer "+Cookies.get("access_token"),id:row.id}})
     if(result.data.status==1){
         userDetail.value.address=result.data.result.address
         userDetail.value.phone=result.data.result.phone

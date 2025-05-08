@@ -89,7 +89,7 @@ async function banConfirm(){
   id:banId.value
     }
     try{
-        const result=await axios.delete('/api/admin/book_manage',{headers:headers})
+        const result=await axios.delete('/api/admin/bookManage',{headers:headers})
         if(result.data.status==1){
             ElMessage.success(result.data.message)
         }
@@ -128,7 +128,7 @@ let bookData = ref<Array<any>>([])
 async function getdata(){
     try{
       Loaded.value=false
-        const result=await axios.get('/api/admin/book_manage',{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
+        const result=await axios.get('/api/admin/bookManage',{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
         if(result.data.status==1){
             bookData.value=result.data.result
             Loaded.value=true

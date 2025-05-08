@@ -72,7 +72,7 @@ const showDetail=ref(false),buy_end_Visible=ref(false)
 async function getdata(){
     try{
         Loaded.value=false
-        const result=await axios.get('/api/get_uploaded_books',{headers:{Authorization:"Bearer "+Cookies.get("access_token"),Action:"own"}})
+        const result=await axios.get('/api/store/getBooks',{headers:{Authorization:"Bearer "+Cookies.get("access_token"),Action:"own"}})
         if(result.data.status==1){
             bookData.value=result.data.result
             Loaded.value=true
@@ -112,7 +112,7 @@ function buy_end_dialog(id:any){
 }
 async function buy_end(){
     try{
-    const result=await axios.get('/api/book_end',{headers:{Authorization:"Bearer "+Cookies.get("access_token"),id:del_id.value}})
+    const result=await axios.get('/api/store/bookEnd',{headers:{Authorization:"Bearer "+Cookies.get("access_token"),id:del_id.value}})
     if(result.data.status==1){
         ElMessage({
             message:"交易完成！",

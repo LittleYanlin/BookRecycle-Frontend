@@ -49,7 +49,7 @@ import Cookies from 'js-cookie';
 async function getdata() {
   loading.value=true
     try{
-    const result=await axios.get('/api/report',{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
+    const result=await axios.get('/api/official/report',{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
     if(result.data.status==1){
         reportData.value=result.data.result
     }
@@ -76,7 +76,7 @@ reportDetail.value=row
 }
 async function del(row:any) {
     try {
-    const response = await axios.delete('/api/report',{headers:{id:row.id,Authorization:"Bearer "+Cookies.get("access_token")}});
+    const response = await axios.delete('/api/official/report',{headers:{id:row.id,Authorization:"Bearer "+Cookies.get("access_token")}});
     if (response.data.status === 1) {
       ElMessage.success('删除成功');
       getdata()

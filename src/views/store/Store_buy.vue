@@ -147,7 +147,7 @@ let bookData = ref<Array<any>>([])
 async function getdata(){
     try{
       Loaded.value=false
-        const result=await axios.get('/api/get_uploaded_books',{headers:{Authorization:"Bearer "+Cookies.get("access_token"),Action:"all"}})
+        const result=await axios.get('/api/store/getBooks',{headers:{Authorization:"Bearer "+Cookies.get("access_token"),Action:"all"}})
         if(result.data.status==1){
             bookData.value=result.data.result
             Loaded.value=true
@@ -204,7 +204,7 @@ async function uploadBook(){
   uploadBookData.append('img_url',url.value)
   uploading.value=true
   try{
-    let result=await axios.post('/api/upload_book_hub',uploadBookData,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
+    let result=await axios.post('/api/store/uploadBooks',uploadBookData,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
     if(result.data.status==1){
       ElMessage({
         message:"上传成功！",

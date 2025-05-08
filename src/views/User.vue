@@ -1,6 +1,7 @@
 <template>
     <h1>个人信息维护</h1>
     <el-form class="login-form">
+      <el-text type="warning">密码必须大于8位小于20位且必须包含大小写字母、数字和特殊符号</el-text>
       <el-form-item label="更改密码"  >
         <el-input v-model="new_password" type="password"/>
       </el-form-item>

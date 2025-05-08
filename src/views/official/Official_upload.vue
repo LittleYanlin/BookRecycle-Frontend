@@ -95,7 +95,7 @@ async function onSubmit(){
   let Data=new FormData()
   Data.append("kg_upload",upload_kg.value)
   Data.append("img_url",url.value)
-  const result=await axios.post('/api/upload_book',Data,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
+  const result=await axios.post('/api/official/uploadBooks',Data,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
   if(result.data.status==1){
     ElMessage({
       message:"上传成功！",
