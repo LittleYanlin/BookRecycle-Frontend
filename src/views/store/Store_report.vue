@@ -31,7 +31,7 @@ async function report() {
     Data.append("message",reportData.value.message)
     Data.append("data",reportData.value.data)
     try{
-        const result=await axios.post('/api/official/report',Data,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
+        const result=await axios.post('/api/store/report',Data,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
         if(result.data.status==1){
             ElMessage({
                 message:"举报提交成功！",

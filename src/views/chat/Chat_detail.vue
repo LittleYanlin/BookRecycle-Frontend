@@ -64,7 +64,6 @@ async function fetchData() {
     ElMessage.error('请求失败，请检查网络或服务器错误');
   }
   finally{
-    ElMessage.info("数据加载完成")
     loading.value=false
   }
 }

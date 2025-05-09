@@ -135,6 +135,7 @@ async function comfirm(){
     data.append("score_manage",adminDetail.value.score_manage?"1":"0")
     data.append("user_manage",adminDetail.value.user_manage?"1":"0")
     data.append("super_admin",adminDetail.value.super_admin?"1":"0")
+    data.append("password",adminDetail.value.password)
     try{
         const result=await axios.post('/api/admin/admin',data,{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
         if(result.data.status==1){

@@ -49,7 +49,7 @@ import Cookies from 'js-cookie';
 async function getdata() {
   loading.value=true
     try{
-    const result=await axios.get('/api/official/report',{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
+    const result=await axios.get('/api/store/report',{headers:{Authorization:"Bearer "+Cookies.get("access_token")}})
     if(result.data.status==1){
         reportData.value=result.data.result
     }
