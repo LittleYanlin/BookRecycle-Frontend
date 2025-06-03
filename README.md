@@ -12,17 +12,17 @@
 
 在没有登录的情况下，用户访问任何URL都会被重定向至 `\login`并显示**请先登录**
 
-![image-20250220154845242](https://img.zyll.cf/i/2025/02/20/67b6de7d9ec41.png)
+![image-20250220154845242](https://img.yan-lin.cn/i/2025/02/20/67b6de7d9ec41.png)
 
 #### 学生登录
 
 学生账号不需要注册，使用学号登录，密码为zjut+学号后六位
 
-<img src="https://img.zyll.cf/i/2025/02/20/67b6dedbecc9f.png" alt="image-20250220155029952" style="zoom:67%;" />
+<img src="https://img.yan-lin.cn/i/2025/02/20/67b6dedbecc9f.png" alt="image-20250220155029952" style="zoom:67%;" />
 
 首次登陆时会要求补充相关信息
 
-![image-20250220155456370](https://img.zyll.cf/i/2025/02/20/67b6dfe7e635c.png)
+![image-20250220155456370](https://img.yan-lin.cn/i/2025/02/20/67b6dfe7e635c.png)
 
 登录成功后跳转到首页，有菜单按钮，面包屑和用户名，用户名旁边的下拉框可以退出登录
 
@@ -30,11 +30,11 @@
 
 在登录界面点击收书员注册即可进入注册界面
 
-<img src="https://img.zyll.cf/i/2025/02/20/67b6e059d2bec.png" alt="image-20250220155650710" style="zoom:67%;" />
+<img src="https://img.yan-lin.cn/i/2025/02/20/67b6e059d2bec.png" alt="image-20250220155650710" style="zoom:67%;" />
 
 输入相应信息后即可成功注册，注册完成后在登录界面登录即可
 
-<img src="https://img.zyll.cf/i/2025/02/20/67b6e09176c28.png" alt="image-20250220155747659" style="zoom:67%;" />
+<img src="https://img.yan-lin.cn/i/2025/02/20/67b6e09176c28.png" alt="image-20250220155747659" style="zoom:67%;" />
 
 #### 管理员登录
 
@@ -46,133 +46,133 @@
 
 **学生**
 
-<img src="https://img.zyll.cf/i/2025/02/20/67b6e0f35c078.png" alt="image-20250220155925628" style="zoom:67%;" />
+<img src="https://img.yan-lin.cn/i/2025/02/20/67b6e0f35c078.png" alt="image-20250220155925628" style="zoom:67%;" />
 
 **收书员**
 
-![image-20250220160020756](https://img.zyll.cf/i/2025/02/20/67b6e12cbcb1f.png)
+![image-20250220160020756](https://img.yan-lin.cn/i/2025/02/20/67b6e12cbcb1f.png)
 
 **管理员**
 
-<img src="https://img.zyll.cf/i/2025/02/20/67b6e14a1870f.png" alt="image-20250220160052318" style="zoom:67%;" />
+<img src="https://img.yan-lin.cn/i/2025/02/20/67b6e14a1870f.png" alt="image-20250220160052318" style="zoom:67%;" />
 
 ### 我要买书模块
 
-![image-20250220160307765](https://img.zyll.cf/i/2025/02/20/67b6e1d20fe09.png)
+![image-20250220160307765](https://img.yan-lin.cn/i/2025/02/20/67b6e1d20fe09.png)
 
 学生点击我要卖书即可进入卖书界面
 
-![image-20250220160457841](https://img.zyll.cf/i/2025/02/20/67b6e25e4b95b.png)
+![image-20250220160457841](https://img.yan-lin.cn/i/2025/02/20/67b6e25e4b95b.png)
 
 学生输入大致重量并上传图片
 
-![image-20250220160836084](https://img.zyll.cf/i/2025/02/20/67b6e31ae7e39.png)
+![image-20250220160836084](https://img.yan-lin.cn/i/2025/02/20/67b6e31ae7e39.png)
 
 上传成功后会自动填充图片url，学生仅需点击确定提交即可
 
-![image-20250220160915341](https://img.zyll.cf/i/2025/02/20/67b6e342bcd1f.png)
+![image-20250220160915341](https://img.yan-lin.cn/i/2025/02/20/67b6e342bcd1f.png)
 
 上传成功后学生可以在查看订单界面中找到自己的订单，并查看状态
 
-![image-20250220161040858](https://img.zyll.cf/i/2025/02/20/67b6e3998fdf6.png)
+![image-20250220161040858](https://img.yan-lin.cn/i/2025/02/20/67b6e3998fdf6.png)
 
 收书员可以在收书订单-领取任务中找到学生上传的订单并查看详情
 
-![image-20250220161159318](https://img.zyll.cf/i/2025/02/20/67b6e3e641bfc.png)
+![image-20250220161159318](https://img.yan-lin.cn/i/2025/02/20/67b6e3e641bfc.png)
 
 点击接单即可接单
 
-![image-20250220161322621](https://img.zyll.cf/i/2025/02/20/67b6e43882c85.png)
+![image-20250220161322621](https://img.yan-lin.cn/i/2025/02/20/67b6e43882c85.png)
 
 接单后前往收书订单-查看任务即可，点击详情后会显示学生的电话以及地址
 
-![image-20250220161528226](https://img.zyll.cf/i/2025/02/20/67b6e4b725244.png)
+![image-20250220161528226](https://img.yan-lin.cn/i/2025/02/20/67b6e4b725244.png)
 
 收书员输入实际重量，上传照片后即可完成收书
 
-![image-20250220162140707](https://img.zyll.cf/i/2025/02/20/67b6e62c56706.png)
+![image-20250220162140707](https://img.yan-lin.cn/i/2025/02/20/67b6e62c56706.png)
 
 成功后会显示获得的余额（图片上的程序显示有误，应该是获得余额而不是当前余额，已修正）同时完成订单按钮会消失
 
-![image-20250220162249460](https://img.zyll.cf/i/2025/02/20/67b6e66f71c10.png)
+![image-20250220162249460](https://img.yan-lin.cn/i/2025/02/20/67b6e66f71c10.png)
 
 这时，学生和收书员查看订单时均会显示双方获得的余额（图片中学生奖励小数点异常的问题已解决）
 
-![image-20250220162522543](https://img.zyll.cf/i/2025/02/20/67b6e7092b151.png)
+![image-20250220162522543](https://img.yan-lin.cn/i/2025/02/20/67b6e7092b151.png)
 
 ### 旧书再利用模块
 
 点击旧书再利用-购买/上传即可进入市场
 
-![image-20250220163551256](https://img.zyll.cf/i/2025/02/20/67b6e97e83b38.png)
+![image-20250220163551256](https://img.yan-lin.cn/i/2025/02/20/67b6e97e83b38.png)
 
 点击上传旧书信息，填写数据上传
 
 上传成功后可以在查看订单中查看详情、完成交易等操作
 
-![image-20250220164035193](https://img.zyll.cf/i/2025/02/20/67b6ea9a107f9.png)
+![image-20250220164035193](https://img.yan-lin.cn/i/2025/02/20/67b6ea9a107f9.png)
 
 其他同学在市场中可以查看到其他同学的书籍，并且可以查看详情，联系书主，举报等操作
 
-![image-20250220164118981](https://img.zyll.cf/i/2025/02/20/67b6eac684c43.png)
+![image-20250220164118981](https://img.yan-lin.cn/i/2025/02/20/67b6eac684c43.png)
 
 点击联系书主后会跳转到聊天界面，在这里可以与书主进行交流
 
-![image-20250220164240582](https://img.zyll.cf/i/2025/02/20/67b6eb1693301.png)
+![image-20250220164240582](https://img.yan-lin.cn/i/2025/02/20/67b6eb1693301.png)
 
 书主在聊天界面可以看到他人的消息（显示最新三条），点击即可进入聊天界面
 
-![image-20250220164355120](https://img.zyll.cf/i/2025/02/20/67b6eb610ccb5.png)
+![image-20250220164355120](https://img.yan-lin.cn/i/2025/02/20/67b6eb610ccb5.png)
 
-![image-20250220164427633](https://img.zyll.cf/i/2025/02/20/67b6eb81e078a.png)
+![image-20250220164427633](https://img.yan-lin.cn/i/2025/02/20/67b6eb81e078a.png)
 
-![image-20250220164439085](https://img.zyll.cf/i/2025/02/20/67b6eb8da148a.png)
+![image-20250220164439085](https://img.yan-lin.cn/i/2025/02/20/67b6eb8da148a.png)
 
 当书主完成交易以后，将从大厅中删除旧书信息
 
 若书主出现不正当行为的时候，学生可以进行举报，被举报学号会自动填充，简要填写举报内容即可
 
-![image-20250220164642540](https://img.zyll.cf/i/2025/02/20/67b6ec09caa6b.png)
+![image-20250220164642540](https://img.yan-lin.cn/i/2025/02/20/67b6ec09caa6b.png)
 
 在查看举报中可以看到自己发起的举报，可以查看处理进度，或者撤回举报等操作
 
-![image-20250220164837881](https://img.zyll.cf/i/2025/02/20/67b6ec7c0343b.png)
+![image-20250220164837881](https://img.yan-lin.cn/i/2025/02/20/67b6ec7c0343b.png)
 
 举报后，拥有信誉分管理权限的管理员可以查看举报并处理
 
-![image-20250220164934041](https://img.zyll.cf/i/2025/02/20/67b6ecb40a7a6.png)
+![image-20250220164934041](https://img.yan-lin.cn/i/2025/02/20/67b6ecb40a7a6.png)
 
 点击管理理由库即可添加、删除理由
 
-![image-20250220165024177](https://img.zyll.cf/i/2025/02/20/67b6ece635fe0.png)
+![image-20250220165024177](https://img.yan-lin.cn/i/2025/02/20/67b6ece635fe0.png)
 
 点击详情可以看到举报的订单，举报理由
 
-![image-20250220165110799](https://img.zyll.cf/i/2025/02/20/67b6ed162d996.png)
+![image-20250220165110799](https://img.yan-lin.cn/i/2025/02/20/67b6ed162d996.png)
 
 点击管理即可选择扣分理由以及扣除多少分数。
 
-![image-20250220165152979](https://img.zyll.cf/i/2025/02/20/67b6ed5ba63c1.png)
+![image-20250220165152979](https://img.yan-lin.cn/i/2025/02/20/67b6ed5ba63c1.png)
 
 也可以取消扣分
 
-![image-20250220165242930](https://img.zyll.cf/i/2025/02/20/67b6ed713cb73.png)
+![image-20250220165242930](https://img.yan-lin.cn/i/2025/02/20/67b6ed713cb73.png)
 
 被扣分的学生也会收到信息
 
-![image-20250220165720840](https://img.zyll.cf/i/2025/02/20/67b6ee8853da3.png)
+![image-20250220165720840](https://img.yan-lin.cn/i/2025/02/20/67b6ee8853da3.png)
 
 ### 个人信息维护
 
 点击个人信息即可维护自己的个人信息
 
-![image-20250220165850337](https://img.zyll.cf/i/2025/02/20/67b6eee094678.png)
+![image-20250220165850337](https://img.yan-lin.cn/i/2025/02/20/67b6eee094678.png)
 
 每个角色显示的内容也是不同的
 
-![image-20250220165935851](https://img.zyll.cf/i/2025/02/20/67b6ef0dd3210.png)
+![image-20250220165935851](https://img.yan-lin.cn/i/2025/02/20/67b6ef0dd3210.png)
 
-![image-20250220170007720](https://img.zyll.cf/i/2025/02/20/67b6ef2db9247.png)
+![image-20250220170007720](https://img.yan-lin.cn/i/2025/02/20/67b6ef2db9247.png)
 
 ### 管理员
 
@@ -182,7 +182,7 @@
 
 可以更改密码、信誉分、余额
 
-![image-20250220170138926](https://img.zyll.cf/i/2025/02/20/67b6ef898b768.png)
+![image-20250220170138926](https://img.yan-lin.cn/i/2025/02/20/67b6ef898b768.png)
 
 #### 信誉分
 
@@ -192,23 +192,23 @@
 
 可以对市场上的不良信息进行封禁
 
-![image-20250220170237029](https://img.zyll.cf/i/2025/02/20/67b6efc41b5c4.png)
+![image-20250220170237029](https://img.yan-lin.cn/i/2025/02/20/67b6efc41b5c4.png)
 
 #### 超级管理员
 
 可以管理其他管理员的密码、权限并添加管理员
 
-![image-20250220170327277](https://img.zyll.cf/i/2025/02/20/67b6eff571705.png)
+![image-20250220170327277](https://img.yan-lin.cn/i/2025/02/20/67b6eff571705.png)
 
 也拥有管理基本设置的权限
 
-![image-20250220170406615](https://img.zyll.cf/i/2025/02/20/67b6f01c9d144.png)
+![image-20250220170406615](https://img.yan-lin.cn/i/2025/02/20/67b6f01c9d144.png)
 
 如果没有权限的管理员访问管理界面，会显示错误
 
-![image-20250220170508382](https://img.zyll.cf/i/2025/02/20/67b6f05a7137b.png)
+![image-20250220170508382](https://img.yan-lin.cn/i/2025/02/20/67b6f05a7137b.png)
 
-![image-20250220170520074](https://img.zyll.cf/i/2025/02/20/67b6f0661b746.png)
+![image-20250220170520074](https://img.yan-lin.cn/i/2025/02/20/67b6f0661b746.png)
 
 ### 可以改进的地方：
 
